@@ -11,6 +11,8 @@ This container, itself, is distributed under the [MIT Licence][mit].
 
 ## Installation
 
+This container is published on Docker Hub as [`defectivebit/crushftp`][hub].
+
 Run the container like any other, publishing ports (exposed ports listed below)
 as neccesary. Note that the default username and password are both `crushadmin`.
 
@@ -28,5 +30,5 @@ This container exposes these ports (publish using `-p` with `docker run`):
 - **8080, 9090**: HTTP webserver
 
 [crushftp]: https://www.crushftp.com
-[unraid]: https://lime-technology.com
 [mit]: https://github.com/defectivebit/docker-crushftp/blob/master/LICENCE
+[hub]: https://hub.docker.com/r/defectivebit/crushftp/
