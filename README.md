@@ -1,8 +1,6 @@
 # docker-crushftp
 
-A Docker container for [CrushFTP Server][crushftp], including dependencies like
-Java and the newer Java Cryptography Extension. This container will work in most
-any environment but is particularily designed for [unRAID][unraid].
+A Docker container for [CrushFTP Server][crushftp]. This container installs dependencies, including Java and the newer Java Cryptography Extension.
 
 **Note:** This container does not directly include any of the aforementioned
 copyrighted products, rather, it downloads them from the servers of their
@@ -16,7 +14,7 @@ This container, itself, is distributed under the [MIT Licence][mit].
 Run the container like any other, publishing ports (exposed ports listed below)
 as neccesary. Note that the default username and password are both `crushadmin`.
 
-Of course, you'll also need to mount volumes for the data you want to share with
+Of course, you may also need to mount volumes for data you want to share with
 CrushFTP. To do this, use the `-v` parameter with `docker run`.
 
 ## Ports
