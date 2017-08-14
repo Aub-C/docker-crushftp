@@ -2,10 +2,13 @@
 
 A Docker container for [CrushFTP Server][crushftp]. This container installs dependencies, including Java and the newer Java Cryptography Extension.
 
-**Note:** This container does not directly include any of the aforementioned
+**This container is automatically rebuilt every 48 hours with the latest updates
+to Alpine Linux, Java 8 and CrushFTP 8.**
+
+**Note:** This repository does not directly include any of the aforementioned
 copyrighted products, rather, it downloads them from the servers of their
-respective developers. By using this container, you agree to any licence terms
-they may have.
+respective developers at buildtime. By using this container, you agree to any
+licence terms they may have.
 
 This container, itself, is distributed under the [MIT Licence][mit].
 
