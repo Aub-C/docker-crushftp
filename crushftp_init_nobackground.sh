@@ -32,6 +32,27 @@ DEBUG=0
 LC_ALL=en_US.UTF-8
 export LC_ALL=en_US.utf8
 
+# Check if it's the first run and if so create appropriate symlinks
+if [ !f /var/opt/CrushFTP8_PC/symlinkscreated ]; then
+  mkdir "/config"
+  mkdir "/config/backup"
+  mkdir "/config/jobs"
+  mkdir "/config/logs"
+  mkdir "/config/plugins"
+  mkdir "/config/statsDB"
+  mkdir "/config/syncsDB"
+  mkdir "/config/users"
+  mkdir "/config/extras"
+  ln -s "/var/opt/CrushFTP8_PC/backup /config/backup"
+  ln -s "/var/opt/CrushFTP8_PC/jobs /config/jobs"
+  ln -s "/var/opt/CrushFTP8_PC/logs /config/logs"
+  ln -s "/var/opt/CrushFTP8_PC/plugins /config/plugins"
+  ln -s "/var/opt/CrushFTP8_PC/statsDB /config/statsDB"
+  ln -s "/var/opt/CrushFTP8_PC/syncsDB /config/syncsDB"
+  ln -s "/var/opt/CrushFTP8_PC/users /config/users"
+  ln -s "/var/opt/CrushFTP8_PC/extras /config/extras"
+  touch /var/opt/CrushFTP8_PC/symlinkscreated
+fi
 # example of how to redirect a low port to a high port so Crush doesn't have to run as root
 # iptables -t nat -A PREROUTING -p tcp -m tcp --dport 21 -j REDIRECT --to-ports 2121
 
