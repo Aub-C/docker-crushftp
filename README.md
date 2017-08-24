@@ -17,9 +17,9 @@ This container, itself, is distributed under the [MIT Licence][mit].
 This container is published on Docker Hub as [`defectivebit/crushftp`][hub].
 
 Run the container like any other, publishing ports (exposed ports listed below)
-as neccesary, and sharing the container's `/config` directory, which persists
-CrushFTP's configuration, to an appropriate location on the host. Note that the
-default username and password are both `crushadmin`.
+as neccesary, and sharing the container's `/var/opt/CrushFTP8_PC` directory,
+which persists CrushFTP's configuration, to an appropriate location on the host.
+Note that the default username and password are both `crushadmin`.
 
 Of course, you may also need to mount volumes for data you want to share with
 CrushFTP. To do this, use the `-v` parameter with `docker run`.
